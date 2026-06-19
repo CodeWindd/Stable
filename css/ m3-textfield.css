@@ -1,20 +1,16 @@
+/* Material 3 Text Fields */
+
 .m3-text-field__input {
-  width: 200px;
-  max-width: 100%;
-  padding: 10px 12px;
-  border-radius: 999px;
+  padding: 10px 14px;
+  border-radius: var(--m3-shape-corner-small);
   border: 1px solid var(--m3-color-outline);
-  background-color: var(--m3-color-surface-variant);
+  background: var(--m3-color-surface-variant);
   color: var(--m3-color-on-surface);
-  font: inherit;
+  font-size: 16px;
   outline: none;
-  transition: border-color var(--m3-duration-short) ease,
-              box-shadow var(--m3-duration-short) ease,
-              background-color var(--m3-duration-short) ease;
+  width: 200px;
 }
 
 .m3-text-field__input:focus {
   border-color: var(--m3-color-primary);
-  box-shadow: 0 0 0 1px var(--m3-color-primary);
-  background-color: var(--m3-color-surface);
 }

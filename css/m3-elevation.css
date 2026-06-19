@@ -1,11 +1,13 @@
-.m3-elevation-1 {
-  box-shadow: var(--m3-elevation-1);
+/* Material 3 Elevation Levels */
+
+:root {
+  --m3-elevation-1: 0 1px 3px rgba(0,0,0,0.2);
+  --m3-elevation-2: 0 2px 6px rgba(0,0,0,0.25);
+  --m3-elevation-3: 0 4px 12px rgba(0,0,0,0.3);
+  --m3-elevation-4: 0 6px 18px rgba(0,0,0,0.35);
 }
 
-.m3-elevation-2 {
-  box-shadow: var(--m3-elevation-2);
-}
-
-.m3-elevation-3 {
+/* Floating card shadow */
+.m3-elevated {
   box-shadow: var(--m3-elevation-3);
 }

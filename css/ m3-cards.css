@@ -1,115 +1,77 @@
+/* Material 3 Cards */
+
 .m3-card {
-  background-color: var(--m3-color-surface);
+  background: var(--m3-color-surface);
   color: var(--m3-color-on-surface);
-  border-radius: 24px;
-  padding: 20px 20px 16px;
-  border: 1px solid var(--m3-color-outline);
+  border-radius: var(--m3-shape-corner-large);
+  padding: 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--m3-elevation-3);
+  animation: fadeIn var(--m3-motion-duration-medium) var(--m3-motion-ease);
 }
 
-.m3-card--elevated {
-  box-shadow: var(--m3-elevation-1);
+/* Floating weather card */
+.m3-card--floating {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-/* Google Weather–like layout */
+/* Weather layout inside card */
 .m3-weather-layout {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
 .m3-weather-header {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 .m3-weather-search {
   display: flex;
   gap: 8px;
-  flex-wrap: nowrap;
 }
 
 .m3-weather-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
 }
 
 .m3-weather-main-left {
-  min-width: 0;
-  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .m3-weather-main-right {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .m3-weather-icon {
-  width: 64px;
-  height: 64px;
+  width: 96px;
+  height: 96px;
 }
 
-/* AI summary */
-.m3-ai-summary {
-  margin-top: 8px;
-  color: var(--m3-color-on-surface-variant);
-}
-
-/* Hourly row */
 .m3-hourly-row {
   display: flex;
   overflow-x: auto;
-  gap: 8px;
+  gap: 12px;
   padding-bottom: 4px;
 }
 
-.m3-hourly-chip {
-  min-width: 72px;
-  padding: 8px 10px;
-  border-radius: 16px;
-  background-color: var(--m3-color-surface-variant);
-  color: var(--m3-color-on-surface-variant);
-  text-align: center;
-}
-
-/* Daily list */
 .m3-daily-list {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-}
-
-.m3-daily-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 8px;
-  border-radius: 12px;
-}
-
-.m3-daily-row:nth-child(odd) {
-  background-color: var(--m3-color-surface-variant);
-}
-
-.m3-daily-row-left {
-  display: flex;
-  align-items: center;
   gap: 8px;
 }
 
-.m3-daily-row-right {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.m3-daily-icon {
-  width: 32px;
-  height: 32px;
+.m3-ai-summary {
+  margin-top: 8px;
+  color: var(--m3-color-on-surface-variant);
+  font-style: italic;
 }

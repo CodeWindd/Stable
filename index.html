@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Material 3 Weather</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <title>Weather</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Material 3 CSS (14 files) -->
-  <link rel="stylesheet" href="css/m3-base.css">
-  <link rel="stylesheet" href="css/m3-color.css">
-  <link rel="stylesheet" href="css/m3-typography.css">
-  <link rel="stylesheet" href="css/m3-elevation.css">
-  <link rel="stylesheet" href="css/m3-shapes.css">
-  <link rel="stylesheet" href="css/m3-motion.css">
-  <link rel="stylesheet" href="css/m3-buttons.css">
-  <link rel="stylesheet" href="css/m3-cards.css">
-  <link rel="stylesheet" href="css/m3-topappbar.css">
-  <link rel="stylesheet" href="css/m3-textfield.css">
-  <link rel="stylesheet" href="css/m3-ripple.css">
-  <link rel="stylesheet" href="css/m3-theme-dark.css">
-  <link rel="stylesheet" href="css/m3-theme-light.css">
-  <link rel="stylesheet" href="css/m3-utils.css">
+  <!-- Material 3 CSS -->
+  <link rel="stylesheet" href="css/m3-base.css" />
+  <link rel="stylesheet" href="css/m3-color.css" />
+  <link rel="stylesheet" href="css/m3-typography.css" />
+  <link rel="stylesheet" href="css/m3-elevation.css" />
+  <link rel="stylesheet" href="css/m3-shapes.css" />
+  <link rel="stylesheet" href="css/m3-motion.css" />
+  <link rel="stylesheet" href="css/m3-buttons.css" />
+  <link rel="stylesheet" href="css/m3-cards.css" />
+  <link rel="stylesheet" href="css/m3-topappbar.css" />
+  <link rel="stylesheet" href="css/m3-textfield.css" />
+  <link rel="stylesheet" href="css/m3-ripple.css" />
+  <link rel="stylesheet" href="css/m3-theme-dark.css" />
+  <link rel="stylesheet" href="css/m3-theme-light.css" />
+  <link rel="stylesheet" href="css/m3-utils.css" />
+
+  <!-- Backdrop styling -->
+  <link rel="stylesheet" href="css/backdrop.css" />
 </head>
+
 <body class="m3-light">
 
+  <!-- Full-screen backdrop -->
+  <div class="backdrop"></div>
+  <div class="backdrop-overlay"></div>
+
+  <!-- Top App Bar -->
   <header class="m3-top-app-bar">
     <div class="m3-top-app-bar__row">
       <div class="m3-top-app-bar__title">Weather</div>
@@ -32,25 +41,28 @@
     </div>
   </header>
 
-  <main class="m3-main">
+  <!-- Main content -->
+  <main class="m3-main centered-layout">
     <section class="m3-container">
-      <div class="m3-card m3-card--elevated m3-weather-layout">
+      <div class="m3-card m3-card--floating m3-weather-layout">
+
         <!-- Location + search -->
         <div class="m3-weather-header">
           <div>
             <div class="m3-body-medium" id="locationName">City</div>
-            <div class="m3-body-small" id="locationDate">Loading date…</div>
+            <div class="m3-body-small" id="locationDate">Loading…</div>
           </div>
+
           <div class="m3-weather-search">
-            <input id="cityInput" class="m3-text-field__input" type="text" value="Chicago"
-                   placeholder="Enter city (Chicago, London, Tokyo, Paris)">
+            <input id="cityInput" class="m3-text-field__input" type="text"
+              placeholder="Enter city (Chicago, London, Tokyo, Paris)" />
             <button id="fetchWeather" class="m3-button m3-button--filled m3-ripple">
               <span class="m3-button__label">Search</span>
             </button>
           </div>
         </div>
 
-        <!-- Main current weather row -->
+        <!-- Main weather row -->
         <div class="m3-weather-main">
           <div class="m3-weather-main-left">
             <div class="m3-display-large" id="weatherTemp">--°F</div>
@@ -62,8 +74,9 @@
               AI Weather Report will appear here.
             </div>
           </div>
+
           <div class="m3-weather-main-right">
-            <img id="weatherIcon" class="m3-weather-icon" alt="Weather icon">
+            <img id="weatherIcon" class="m3-weather-icon" alt="Weather icon" />
           </div>
         </div>
 
@@ -74,6 +87,7 @@
         <!-- Daily forecast -->
         <div class="m3-section-title m3-body-medium">10‑day forecast</div>
         <div class="m3-daily-list" id="dailyList"></div>
+
       </div>
     </section>
   </main>
@@ -82,5 +96,6 @@
   <script type="module" src="js/material-web.js"></script>
   <script type="module" src="js/material-components.js"></script>
   <script type="module" src="js/site.js"></script>
+
 </body>
 </html>

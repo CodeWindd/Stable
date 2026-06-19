@@ -1,39 +1,21 @@
-.m3-light {
-  --m3-color-primary: #1b73e8;
+/* Material 3 Color Tokens */
+
+:root {
+  --m3-color-primary: #1a73e8;
   --m3-color-on-primary: #ffffff;
-  --m3-color-primary-container: #d2e3fc;
-  --m3-color-on-primary-container: #001d35;
 
-  --m3-color-surface: #ffffff;
+  --m3-color-surface: rgba(255,255,255,0.75);
   --m3-color-on-surface: #1f1f1f;
-  --m3-color-surface-variant: #f1f3f4;
-  --m3-color-on-surface-variant: #5f6368;
+  --m3-color-on-surface-variant: #4f4f4f;
 
-  --m3-color-outline: #dadce0;
-  --m3-color-secondary: #5f6368;
-  --m3-color-error: #d93025;
+  --m3-color-outline: rgba(0,0,0,0.2);
+  --m3-color-surface-variant: rgba(255,255,255,0.55);
 }
 
-.m3-dark {
-  --m3-color-primary: #8ab4f8;
-  --m3-color-on-primary: #062e6f;
-  --m3-color-primary-container: #1f3b57;
-  --m3-color-on-primary-container: #d2e3fc;
-
-  --m3-color-surface: #202124;
-  --m3-color-on-surface: #e8eaed;
-  --m3-color-surface-variant: #303134;
-  --m3-color-on-surface-variant: #bdc1c6;
-
-  --m3-color-outline: #5f6368;
-  --m3-color-secondary: #bdc1c6;
-  --m3-color-error: #f28b82;
-}
-
-body.m3-light,
 body.m3-dark {
-  background-color: var(--m3-color-surface);
-  color: var(--m3-color-on-surface);
-  transition: background-color var(--m3-duration-medium) ease,
-              color var(--m3-duration-medium) ease;
+  --m3-color-surface: rgba(32,33,36,0.75);
+  --m3-color-on-surface: #e8eaed;
+  --m3-color-on-surface-variant: #b0b3b8;
+  --m3-color-outline: rgba(255,255,255,0.2);
+  --m3-color-surface-variant: rgba(255,255,255,0.15);
 }

@@ -1,35 +1,42 @@
+/* Material 3 Base Reset + Layout */
+
 :root {
-  --m3-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  --m3-font-family: "Roboto", system-ui, sans-serif;
   --m3-radius-small: 8px;
-  --m3-radius-medium: 12px;
+  --m3-radius-medium: 16px;
   --m3-radius-large: 28px;
-  --m3-duration-short: 150ms;
-  --m3-duration-medium: 250ms;
-  --m3-elevation-1: 0 1px 3px rgba(0, 0, 0, 0.16);
-  --m3-elevation-2: 0 3px 6px rgba(0, 0, 0, 0.18);
-  --m3-elevation-3: 0 6px 10px rgba(0, 0, 0, 0.20);
+
+  --m3-duration-short: 120ms;
+  --m3-duration-medium: 200ms;
+
+  --m3-elevation-1: 0 1px 3px rgba(0,0,0,0.2);
+  --m3-elevation-2: 0 2px 6px rgba(0,0,0,0.25);
+  --m3-elevation-3: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: var(--m3-font-family);
+  background: transparent;
+  height: 100%;
 }
 
 .m3-main {
-  padding: 88px 16px 24px;
+  padding: 16px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px);
+}
+
+.centered-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .m3-container {
   width: 100%;
-  max-width: 720px;
+  max-width: 480px;
 }

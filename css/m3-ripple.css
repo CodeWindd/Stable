@@ -1,3 +1,5 @@
+/* Material 3 Ripple */
+
 .m3-ripple {
   position: relative;
   overflow: hidden;
@@ -7,11 +9,11 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: currentColor;
+  background: rgba(255,255,255,0.2);
   opacity: 0;
-  transition: opacity var(--m3-duration-short) ease;
+  transition: opacity 120ms ease;
 }
 
 .m3-ripple:active::after {
-  opacity: 0.12;
+  opacity: 1;
 }

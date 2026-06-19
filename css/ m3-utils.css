@@ -1,11 +1,43 @@
-.m3-icon {
-  font-family: "Material Symbols Outlined", system-ui;
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-  font-size: 20px;
+/* Material 3 Utility Helpers */
+
+.m3-flex {
+  display: flex;
 }
 
-.m3-center {
+.m3-flex-center {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+.m3-gap-8 {
+  gap: 8px;
+}
+
+.m3-gap-12 {
+  gap: 12px;
+}
+
+.m3-gap-16 {
+  gap: 16px;
+}
+
+.m3-padding-8 {
+  padding: 8px;
+}
+
+.m3-padding-12 {
+  padding: 12px;
+}
+
+.m3-padding-16 {
+  padding: 16px;
+}
+
+.m3-text-muted {
+  color: var(--m3-color-on-surface-variant);
+}
+
+.m3-hidden {
+  display: none !important;
 }

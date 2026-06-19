@@ -1,4 +1,21 @@
+/* Material 3 Light Theme */
+
 body.m3-light {
-  background-color: var(--m3-color-surface);
+  --m3-color-surface: rgba(255,255,255,0.75);
+  --m3-color-on-surface: #1f1f1f;
+  --m3-color-on-surface-variant: #4f4f4f;
+  --m3-color-outline: rgba(0,0,0,0.2);
+  --m3-color-primary: #1a73e8;
+  --m3-color-on-primary: #ffffff;
+
   color: var(--m3-color-on-surface);
+}
+
+body.m3-light .m3-top-app-bar {
+  background: rgba(255,255,255,0.25);
+  color: #1f1f1f;
+}
+
+body.m3-light .m3-icon-button .m3-icon {
+  color: #1f1f1f;
 }

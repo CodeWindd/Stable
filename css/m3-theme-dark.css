@@ -1,16 +1,21 @@
+/* Material 3 Dark Theme */
+
 body.m3-dark {
-  background-color: var(--m3-color-surface);
+  --m3-color-surface: rgba(32,33,36,0.75);
+  --m3-color-on-surface: #e8eaed;
+  --m3-color-on-surface-variant: #b0b3b8;
+  --m3-color-outline: rgba(255,255,255,0.2);
+  --m3-color-primary: #8ab4f8;
+  --m3-color-on-primary: #1f1f1f;
+
   color: var(--m3-color-on-surface);
 }
 
-body.m3-dark .m3-card {
-  background-color: #202124;
+body.m3-dark .m3-top-app-bar {
+  background: rgba(0,0,0,0.35);
+  color: #e8eaed;
 }
 
-body.m3-dark .m3-hourly-chip {
-  background-color: #303134;
-}
-
-body.m3-dark .m3-daily-row:nth-child(odd) {
-  background-color: #303134;
+body.m3-dark .m3-icon-button .m3-icon {
+  color: #e8eaed;
 }

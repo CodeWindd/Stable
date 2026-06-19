@@ -1,11 +1,25 @@
-.m3-shape-small {
-  border-radius: var(--m3-radius-small);
+/* Material 3 Shape Tokens */
+
+:root {
+  --m3-shape-corner-small: 8px;
+  --m3-shape-corner-medium: 16px;
+  --m3-shape-corner-large: 28px;
+  --m3-shape-corner-full: 999px;
 }
 
-.m3-shape-medium {
-  border-radius: var(--m3-radius-medium);
+/* Rounded containers */
+.m3-rounded-small {
+  border-radius: var(--m3-shape-corner-small);
 }
 
-.m3-shape-large {
-  border-radius: var(--m3-radius-large);
+.m3-rounded-medium {
+  border-radius: var(--m3-shape-corner-medium);
+}
+
+.m3-rounded-large {
+  border-radius: var(--m3-shape-corner-large);
+}
+
+.m3-rounded-full {
+  border-radius: var(--m3-shape-corner-full);
 }

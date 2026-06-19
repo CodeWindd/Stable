@@ -1,45 +1,36 @@
+/* Material 3 Buttons */
+
 .m3-button {
-  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 20px;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  font: inherit;
-  outline: none;
-  background: transparent;
-  color: var(--m3-color-primary);
-  transition: background-color var(--m3-duration-short) ease,
-              box-shadow var(--m3-duration-short) ease,
-              transform var(--m3-duration-short) ease;
-}
-
-.m3-button__label {
+  padding: 10px 18px;
+  border-radius: var(--m3-shape-corner-small);
+  font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background var(--m3-motion-duration-short) var(--m3-motion-ease);
 }
 
 .m3-button--filled {
-  background-color: var(--m3-color-primary);
+  background: var(--m3-color-primary);
   color: var(--m3-color-on-primary);
-  box-shadow: var(--m3-elevation-1);
 }
 
 .m3-button--filled:hover {
-  box-shadow: var(--m3-elevation-2);
-  transform: translateY(-1px);
+  background: #1666d3;
 }
 
 .m3-icon-button {
-  border-radius: 999px;
-  width: 40px;
-  height: 40px;
-  border: none;
   background: transparent;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  border: none;
+  padding: 8px;
+  border-radius: var(--m3-shape-corner-full);
   cursor: pointer;
+}
+
+.m3-icon-button .m3-icon {
+  font-size: 24px;
   color: var(--m3-color-on-surface);
 }
