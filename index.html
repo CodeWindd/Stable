@@ -38,7 +38,7 @@
         <!-- Location + search -->
         <div class="m3-weather-header">
           <div>
-            <div class="m3-body-medium" id="locationName">Chicago, US</div>
+            <div class="m3-body-medium" id="locationName">City</div>
             <div class="m3-body-small" id="locationDate">Loading date…</div>
           </div>
           <div class="m3-weather-search">
@@ -55,24 +55,25 @@
           <div class="m3-weather-main-left">
             <div class="m3-display-large" id="weatherTemp">--°F</div>
             <div class="m3-body-large" id="weatherCondition">Loading…</div>
-            <div class="m3-body-medium" id="weatherMeta">Feels like — · Wind — · Humidity —</div>
+            <div class="m3-body-medium" id="weatherMeta">
+              Feels like — · High — · Low — · Wind — · Humidity —
+            </div>
+            <div class="m3-body-medium m3-ai-summary" id="aiSummary">
+              AI Weather Report will appear here.
+            </div>
           </div>
           <div class="m3-weather-main-right">
-            <div class="m3-weather-icon" id="weatherIcon">☁️</div>
+            <img id="weatherIcon" class="m3-weather-icon" alt="Weather icon">
           </div>
         </div>
 
         <!-- Hourly forecast -->
         <div class="m3-section-title m3-body-medium">Hourly forecast</div>
-        <div class="m3-hourly-row" id="hourlyRow">
-          <!-- Filled by JS -->
-        </div>
+        <div class="m3-hourly-row" id="hourlyRow"></div>
 
         <!-- Daily forecast -->
-        <div class="m3-section-title m3-body-medium">7‑day forecast</div>
-        <div class="m3-daily-list" id="dailyList">
-          <!-- Filled by JS -->
-        </div>
+        <div class="m3-section-title m3-body-medium">10‑day forecast</div>
+        <div class="m3-daily-list" id="dailyList"></div>
       </div>
     </section>
   </main>

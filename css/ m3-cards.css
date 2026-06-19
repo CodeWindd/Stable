@@ -41,6 +41,7 @@
 
 .m3-weather-main-left {
   min-width: 0;
+  flex: 1 1 220px;
 }
 
 .m3-weather-main-right {
@@ -50,12 +51,13 @@
 }
 
 .m3-weather-icon {
-  font-size: 56px;
+  width: 64px;
+  height: 64px;
 }
 
-.m3-section-title {
-  margin-top: 4px;
-  margin-bottom: 4px;
+/* AI summary */
+.m3-ai-summary {
+  margin-top: 8px;
   color: var(--m3-color-on-surface-variant);
 }
 
@@ -68,7 +70,7 @@
 }
 
 .m3-hourly-chip {
-  min-width: 64px;
+  min-width: 72px;
   padding: 8px 10px;
   border-radius: 16px;
   background-color: var(--m3-color-surface-variant);
@@ -105,4 +107,9 @@
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.m3-daily-icon {
+  width: 32px;
+  height: 32px;
 }
