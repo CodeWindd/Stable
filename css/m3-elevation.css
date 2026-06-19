@@ -1,0 +1,11 @@
+.m3-elevation-1 {
+  box-shadow: var(--m3-elevation-1);
+}
+
+.m3-elevation-2 {
+  box-shadow: var(--m3-elevation-2);
+}
+
+.m3-elevation-3 {
+  box-shadow: var(--m3-elevation-3);
+}

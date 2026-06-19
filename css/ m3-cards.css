@@ -1,0 +1,19 @@
+.m3-card {
+  background-color: var(--m3-color-surface);
+  color: var(--m3-color-on-surface);
+  border-radius: var(--m3-radius-large);
+  padding: 24px 20px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.m3-card--elevated {
+  box-shadow: var(--m3-elevation-1);
+}
+
+.m3-weather-card {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: var(--m3-radius-medium);
+  background-color: var(--m3-color-surface-variant);
+  color: var(--m3-color-on-surface-variant);
+}

@@ -1,0 +1,26 @@
+.m3-top-app-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  background-color: var(--m3-color-surface);
+  color: var(--m3-color-on-surface);
+  box-shadow: var(--m3-elevation-1);
+  padding: 0 16px;
+  z-index: 10;
+}
+
+.m3-top-app-bar__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.m3-top-app-bar__title {
+  font-size: 20px;
+  font-weight: 500;
+}

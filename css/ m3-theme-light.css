@@ -1,0 +1,12 @@
+body.m3-light {
+  background-color: var(--m3-color-surface);
+  color: var(--m3-color-on-surface);
+}
+
+body.m3-light .m3-card {
+  background-color: #ffffff;
+}
+
+body.m3-light .m3-weather-card {
+  background-color: var(--m3-color-surface-variant);
+}

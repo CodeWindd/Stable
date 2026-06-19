@@ -1,0 +1,7 @@
+.m3-motion-fast {
+  transition: all var(--m3-duration-short) ease-out;
+}
+
+.m3-motion-medium {
+  transition: all var(--m3-duration-medium) ease-out;
+}

@@ -1,0 +1,17 @@
+.m3-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.m3-ripple::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: currentColor;
+  opacity: 0;
+  transition: opacity var(--m3-duration-short) ease;
+}
+
+.m3-ripple:active::after {
+  opacity: 0.12;
+}

@@ -1,0 +1,37 @@
+:root {
+  --m3-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  --m3-radius-small: 8px;
+  --m3-radius-medium: 12px;
+  --m3-radius-large: 28px;
+  --m3-duration-short: 150ms;
+  --m3-duration-medium: 250ms;
+  --m3-elevation-1: 0 1px 3px rgba(0, 0, 0, 0.16);
+  --m3-elevation-2: 0 3px 6px rgba(0, 0, 0, 0.18);
+  --m3-elevation-3: 0 6px 10px rgba(0, 0, 0, 0.20);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--m3-font-family);
+  background-color: var(--m3-color-surface);
+  color: var(--m3-color-on-surface);
+}
+
+.m3-main {
+  padding: 80px 16px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.m3-container {
+  width: 100%;
+  max-width: 480px;
+}

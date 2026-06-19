@@ -1,0 +1,11 @@
+.m3-shape-small {
+  border-radius: var(--m3-radius-small);
+}
+
+.m3-shape-medium {
+  border-radius: var(--m3-radius-medium);
+}
+
+.m3-shape-large {
+  border-radius: var(--m3-radius-large);
+}

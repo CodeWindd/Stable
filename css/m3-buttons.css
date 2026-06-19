@@ -1,0 +1,49 @@
+.m3-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  outline: none;
+  background: transparent;
+  color: var(--m3-color-primary);
+  transition: background-color var(--m3-duration-short) ease,
+              box-shadow var(--m3-duration-short) ease,
+              transform var(--m3-duration-short) ease;
+}
+
+.m3-button__label {
+  font-weight: 500;
+}
+
+.m3-button--filled {
+  background-color: var(--m3-color-primary);
+  color: var(--m3-color-on-primary);
+  box-shadow: var(--m3-elevation-1);
+}
+
+.m3-button--filled:hover {
+  box-shadow: var(--m3-elevation-2);
+  transform: translateY(-1px);
+}
+
+.m3-button--outlined {
+  border: 1px solid var(--m3-color-outline);
+}
+
+.m3-icon-button {
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--m3-color-on-surface);
+}

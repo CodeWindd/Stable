@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Material 3 Weather</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Material 3 CSS (14 files) -->
+  <link rel="stylesheet" href="css/m3-base.css">
+  <link rel="stylesheet" href="css/m3-color.css">
+  <link rel="stylesheet" href="css/m3-typography.css">
+  <link rel="stylesheet" href="css/m3-elevation.css">
+  <link rel="stylesheet" href="css/m3-shapes.css">
+  <link rel="stylesheet" href="css/m3-motion.css">
+  <link rel="stylesheet" href="css/m3-buttons.css">
+  <link rel="stylesheet" href="css/m3-cards.css">
+  <link rel="stylesheet" href="css/m3-topappbar.css">
+  <link rel="stylesheet" href="css/m3-textfield.css">
+  <link rel="stylesheet" href="css/m3-ripple.css">
+  <link rel="stylesheet" href="css/m3-theme-dark.css">
+  <link rel="stylesheet" href="css/m3-theme-light.css">
+  <link rel="stylesheet" href="css/m3-utils.css">
+</head>
+<body class="m3-light">
+
+  <header class="m3-top-app-bar">
+    <div class="m3-top-app-bar__row">
+      <div class="m3-top-app-bar__title">Material 3 Weather</div>
+      <button class="m3-icon-button" id="themeToggle" aria-label="Toggle theme">
+        <span class="m3-icon">dark_mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="m3-main">
+    <section class="m3-container">
+      <div class="m3-card m3-card--elevated">
+        <h1 class="m3-headline-large">Current Weather</h1>
+
+        <div class="m3-text-field m3-text-field--outlined">
+          <label class="m3-text-field__label" for="cityInput">City</label>
+          <input id="cityInput" class="m3-text-field__input" type="text" value="Chicago">
+        </div>
+
+        <button id="fetchWeather" class="m3-button m3-button--filled">
+          <span class="m3-button__label">Get Weather</span>
+        </button>
+
+        <div id="weatherCard" class="m3-weather-card">
+          <p class="m3-body-large" id="weatherStatus">Waiting for data…</p>
+          <p class="m3-display-small" id="weatherTemp"></p>
+          <p class="m3-body-medium" id="weatherMeta"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script type="module" src="js/material-web.js"></script>
+  <script type="module" src="js/material-components.js"></script>
+  <script type="module" src="js/site.js"></script>
+</body>
+</html>
