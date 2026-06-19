@@ -3,7 +3,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 24px;
+  padding: 10px 20px;
   border-radius: 999px;
   border: none;
   cursor: pointer;
@@ -29,10 +29,6 @@
 .m3-button--filled:hover {
   box-shadow: var(--m3-elevation-2);
   transform: translateY(-1px);
-}
-
-.m3-button--outlined {
-  border: 1px solid var(--m3-color-outline);
 }
 
 .m3-icon-button {

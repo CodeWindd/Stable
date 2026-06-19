@@ -1,6 +1,4 @@
-// Lightweight bridge to Material Symbols and any future web components.
-// Here we just ensure the icon font is loaded.
-
+// Load Material Symbols font (for icons)
 const link = document.createElement("link");
 link.rel = "stylesheet";
 link.href =

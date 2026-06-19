@@ -4,9 +4,13 @@ body.m3-dark {
 }
 
 body.m3-dark .m3-card {
-  background-color: #26252b;
+  background-color: #202124;
 }
 
-body.m3-dark .m3-weather-card {
-  background-color: #34323a;
+body.m3-dark .m3-hourly-chip {
+  background-color: #303134;
+}
+
+body.m3-dark .m3-daily-row:nth-child(odd) {
+  background-color: #303134;
 }

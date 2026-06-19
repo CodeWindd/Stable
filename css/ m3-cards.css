@@ -1,19 +1,108 @@
 .m3-card {
   background-color: var(--m3-color-surface);
   color: var(--m3-color-on-surface);
-  border-radius: var(--m3-radius-large);
-  padding: 24px 20px 20px;
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 24px;
+  padding: 20px 20px 16px;
+  border: 1px solid var(--m3-color-outline);
 }
 
 .m3-card--elevated {
   box-shadow: var(--m3-elevation-1);
 }
 
-.m3-weather-card {
-  margin-top: 24px;
-  padding: 16px;
-  border-radius: var(--m3-radius-medium);
+/* Google Weather–like layout */
+.m3-weather-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.m3-weather-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.m3-weather-search {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.m3-weather-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.m3-weather-main-left {
+  min-width: 0;
+}
+
+.m3-weather-main-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.m3-weather-icon {
+  font-size: 56px;
+}
+
+.m3-section-title {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: var(--m3-color-on-surface-variant);
+}
+
+/* Hourly row */
+.m3-hourly-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  padding-bottom: 4px;
+}
+
+.m3-hourly-chip {
+  min-width: 64px;
+  padding: 8px 10px;
+  border-radius: 16px;
   background-color: var(--m3-color-surface-variant);
   color: var(--m3-color-on-surface-variant);
+  text-align: center;
+}
+
+/* Daily list */
+.m3-daily-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.m3-daily-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 12px;
+}
+
+.m3-daily-row:nth-child(odd) {
+  background-color: var(--m3-color-surface-variant);
+}
+
+.m3-daily-row-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.m3-daily-row-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }

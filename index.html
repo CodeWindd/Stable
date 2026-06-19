@@ -25,8 +25,8 @@
 
   <header class="m3-top-app-bar">
     <div class="m3-top-app-bar__row">
-      <div class="m3-top-app-bar__title">Material 3 Weather</div>
-      <button class="m3-icon-button" id="themeToggle" aria-label="Toggle theme">
+      <div class="m3-top-app-bar__title">Weather</div>
+      <button class="m3-icon-button m3-ripple" id="themeToggle" aria-label="Toggle theme">
         <span class="m3-icon">dark_mode</span>
       </button>
     </div>
@@ -34,22 +34,44 @@
 
   <main class="m3-main">
     <section class="m3-container">
-      <div class="m3-card m3-card--elevated">
-        <h1 class="m3-headline-large">Current Weather</h1>
-
-        <div class="m3-text-field m3-text-field--outlined">
-          <label class="m3-text-field__label" for="cityInput">City</label>
-          <input id="cityInput" class="m3-text-field__input" type="text" value="Chicago">
+      <div class="m3-card m3-card--elevated m3-weather-layout">
+        <!-- Location + search -->
+        <div class="m3-weather-header">
+          <div>
+            <div class="m3-body-medium" id="locationName">Chicago, US</div>
+            <div class="m3-body-small" id="locationDate">Loading date…</div>
+          </div>
+          <div class="m3-weather-search">
+            <input id="cityInput" class="m3-text-field__input" type="text" value="Chicago"
+                   placeholder="Enter city (Chicago, London, Tokyo, Paris)">
+            <button id="fetchWeather" class="m3-button m3-button--filled m3-ripple">
+              <span class="m3-button__label">Search</span>
+            </button>
+          </div>
         </div>
 
-        <button id="fetchWeather" class="m3-button m3-button--filled">
-          <span class="m3-button__label">Get Weather</span>
-        </button>
+        <!-- Main current weather row -->
+        <div class="m3-weather-main">
+          <div class="m3-weather-main-left">
+            <div class="m3-display-large" id="weatherTemp">--°F</div>
+            <div class="m3-body-large" id="weatherCondition">Loading…</div>
+            <div class="m3-body-medium" id="weatherMeta">Feels like — · Wind — · Humidity —</div>
+          </div>
+          <div class="m3-weather-main-right">
+            <div class="m3-weather-icon" id="weatherIcon">☁️</div>
+          </div>
+        </div>
 
-        <div id="weatherCard" class="m3-weather-card">
-          <p class="m3-body-large" id="weatherStatus">Waiting for data…</p>
-          <p class="m3-display-small" id="weatherTemp"></p>
-          <p class="m3-body-medium" id="weatherMeta"></p>
+        <!-- Hourly forecast -->
+        <div class="m3-section-title m3-body-medium">Hourly forecast</div>
+        <div class="m3-hourly-row" id="hourlyRow">
+          <!-- Filled by JS -->
+        </div>
+
+        <!-- Daily forecast -->
+        <div class="m3-section-title m3-body-medium">7‑day forecast</div>
+        <div class="m3-daily-list" id="dailyList">
+          <!-- Filled by JS -->
         </div>
       </div>
     </section>
